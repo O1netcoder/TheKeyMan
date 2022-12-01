@@ -2,7 +2,7 @@ let sectionProgress = document.querySelector(".section_progress"),
     progressValue = document.querySelector(".progress_value");
 
 let progressStartValue = 0,
-    progressEndValue = 46,
+    progressEndValue = 16,
     speed = 100;
 
 let progress = setInterval(()=>{
@@ -21,7 +21,7 @@ let sectionProgress2 = document.querySelector(".section_progress2"),
     progressValue2 = document.querySelector(".progress_value2");
 
 let progressStartValue2 = 0,
-    progressEndValue2 = 46,
+    progressEndValue2 = 16,
     speed2 = 100;
 
 let progress2 = setInterval(()=>{
@@ -40,7 +40,7 @@ let sectionProgress3 = document.querySelector(".section_progress3"),
     progressValue3 = document.querySelector(".progress_value3");
 
 let progressStartValue3 = 0,
-    progressEndValue3 = 98,
+    progressEndValue3 = 90,
     speed3 = 100;
 
 let progress3 = setInterval(()=>{

@@ -96,7 +96,7 @@ span{
 	background: #191919;
 }
 .over{
-	mix-blend-mode: multiply;
+	mix-blend-mode: color-dodge;
 }
 .content{
     position:absolute;

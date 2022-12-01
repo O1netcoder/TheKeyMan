@@ -7,7 +7,7 @@
 .hero{
     height: 100vh;
     width: 100%;
-    background-image: url(./image/backimage.jpg);
+    background-image: url(./image/about-me-img.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -152,6 +152,7 @@ button{
     transition: .4s;
 }
 button:hover{
+    color: white;
     background-color: transparent;
     border: 2px solid yellow;
     cursor: pointer;
@@ -214,6 +215,7 @@ h5{
     transition: .4s;
 }
 .card .button:hover{
+    color: white;
     background-color: transparent;
     border: 2px solid yellow;
     cursor: pointer; 
@@ -244,6 +246,7 @@ h5{
     transition: .4s;
 }
 .contact-me .button-two:hover{
+    color: white;
     background-color: transparent;
     border: 2px solid yellow;
     cursor: pointer;
