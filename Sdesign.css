@@ -20,7 +20,6 @@ header{
     background-color: #191919;
 }
 .navBar{
-  
     padding: 10px;
     margin: 20px;
 }
@@ -46,9 +45,6 @@ header{
     border-radius: 10px;
     transition: .4s;
 }
-
- 
-
 .logo{
     padding: 10px;
     margin: 10px;
@@ -66,7 +62,7 @@ header{
     left: 0px;
     margin: 0px;
     padding: 0px;
-    justify-content: space-between;
+   justify-content: space-between;
     min-height: 100vh;
     display: flex;
     width: 100%;
@@ -134,8 +130,7 @@ h1{
     padding: 10px 20px 10px 50px;
     text-shadow: 2px;
     text-transform: capitalize;
-    font-size: 80px;
-    
+    font-size: 80px;  
 }
 
 
@@ -204,25 +199,19 @@ h3{
     text-align: center;
     grid-gap: 1rem;
     padding: 1rem 80px;
-    font-size: 1.2rem;
-    
+    font-size: 1.2rem;  
 }
-
-
 .skill-box{
     padding: 1rem;
     color: #ddd;
     cursor: pointer;
 }
-
 .skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
     width: 35px;
 } 
-
 .skill-box:hover .skill-img{
     transform: translateY(-10px);
 }
-
 .skill-title{
     display: flex;
     flex-direction: column;
@@ -307,7 +296,6 @@ h3{
     flex-direction: column;
     align-items: center;
 }
-
 .section_progress{
     position: relative;
     height: 150px;
@@ -530,261 +518,199 @@ footer{
 }
 
 .year-launch p{
+    margin-top: 20px;
     color: yellow;
-    bottom: 35px;
+    bottom: 30px;
     font-size: 14px;
 }
  
-@media screen and (max-width: 990px){
-
-    body{
-        align-items: center;
+@media screen and (max-width:700px){
+    .navBar{
+        padding: 4px;
+        margin: 8px;
+        font-size: 10px;
     }
-    header{
-        display: flex;
-        width: 100%;
-        height: 10vh;
-        justify-content: space-between;
+    .navBar a{
+        padding: 2px;
+        margin: 4px 6px;
     }
-
+    .navBar a:hover{
+        padding: 4px;
+        margin: 10px;
+    }
     .logo{
-    padding: 3px;
-    margin: 6x;
-}
- 
-.logo_img_size{
-    width: 2em;
-    height: 2em;
-}
-
-    .text{
-        position: absolute;
-        right: 3%;
-        top: 80px;
-        margin: 0px 5px 0px 5px;
-        padding: 3px;
-        font-size: 1em;
-         
+        padding: 2px;
+        margin: 4px;
     }
-    .text h1{
-        font-size: 3em;
-
-    }
-    .text_p{
-        position: absolute;
-        top: 70%;
-        left: 13%;
-        width: 100%;
-        margin: 20px;
-        padding: 10px;
-        font-size: .3em;
-
+    .logo_img{
+        width: 4em;
+        height: 2em;
+        filter: invert(1);
     }
     .container{
-        position: relative;
-        top: 0px;
-        left: 0%;
-        margin: 0px;
-        padding: 0px;
-        min-height: 65vh;
-        display: flex;
-        width: 100%;
-        font-family: Verdana, Tahoma, sans-serif;
-        color: white;
-        background: black;
-    
+        min-height: 70vh;
     }
-    
-    .container video{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.9;
-    }
-    
-    .over{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #37383d
-    }
-    .over{
-        mix-blend-mode: multiply;
-    }
-
     .content{
         position:absolute;
-        top: 0px;
-        left:  90%;
+        bottom: 20px;
+        right: 40px;
     }
-
-    .navBar a{
-        margin: 1px;
-        padding: 1px;
+    
+    .text{
+        position: relative;
     }
-
-    .navBar a:hover{
-        background-color: skyblue;
-        text-transform: capitalize;
-        text-align: center;
-        padding: 1px;
-        margin: 1px;
-        border-radius: 4px;
-        transition: 1s;
+    
+    .text h1{
+        font-size: 2em;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    h1{
+        margin: 20px 20px 0px 10px;
+        padding: 10px 20px 0px 10px; 
+    }
+    .text_p{
+        font-size: 0.7em;
+        margin: 9px 0 0 50px;
+        padding: 5px;
     }
 
     .client_section_wrapper{
-        position: relative;
-        width: 100%;
-        display: flex;
-        margin: 50px 50px 0 2px;
-        padding: 5px;
-        height: 300px;
-
-    }
-
-    .client_section,.client_section2,.client_section3 {
-        display:flex;
-        width: 100%;
-        margin: 8px;
-        padding: 20px 20px;
-        border-radius: 8px;
-        background-color: rgb(255, 246, 246);
-        column-gap: 30px;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    .client_section_text,.client_section_text2,.client_section_text3{
-    margin: 5px;
-    padding: 5px;
-    font-size: 20px;
-    font-weight: 160;
-    color: black;
-    text-transform: capitalize;
-    text-align: center;
-    }
-.section_progress,.section_progress2,.section_progress3{
-    position: relative;
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg); 
-}
-
-.section_progress::before{
-    content: "";
-    position: absolute;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-
-.section_progress2::before{
-    content: "";
-    position: absolute;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-
-.section_progress3::before{
-    content: "";
-    position: absolute;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-
-
-
-.progress_value,.progress_value2,.progress_value3{
-    position: relative;
-    font-size: 15px;
-    font-weight: 400;
-    color: #7d2ae8;
-}
-
-    .service_space{
-        position: relative;
-        margin-top: 5%;
-        padding-top: 2%;
-    }
-
-
-    #why{
-        margin: 30px;
-        padding: 20px;
+        margin: 10px;
+        padding: 10px;
         display: grid;
-        justify-content: center;
-        font-size: 14px;
-        box-sizing: border-box;
+        grid-template-columns: repeat(1, 1fr);
     }
-    
-    .each-why{
+    .client_section{
+        margin-bottom: 10px;
+         
+    }
+    .section_progress{
+        position: relative;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
         align-items: center;
-        text-align: center;
-        margin: 5px;
-        font-size: 14px;
-        font-family: Helvetica, sans-serif;
-        padding: 5px;
-        border: 5px silver dotted;
-        border-radius: 10px;
-        justify-content: space-between;
+        justify-content: center;
+        background: conic-gradient(#191919 3.6deg, yellow 0deg); 
     }
-    h3{
-        margin-top: 15px;
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
-        box-sizing: border-box;
+    .section_progress::before{
+        content: "";
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+        background-color: #fff;
     }
-     
     
-.service_space{
-    position: relative;
-    margin-top: 45px;
-    padding-top: 20px;
-        
+    .progress_value{
+        position: relative;
+        font-size: 20px;
+        font-weight: 300;
+        color: #06001a;
+    }
+    
+    .client_section_text{
+        margin: 5px;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: 300;
+        color: #1a1818;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .client_section2{
+        margin-bottom: 10px;
+        padding: 20px 0;
+    }
+    .section_progress2{
+        position: relative;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: conic-gradient(#191919 3.6deg, yellow 0deg); 
+    }
+    .section_progress2::before{
+        content: "";
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    .progress_value2{
+        position: relative;
+        font-size: 20px;
+        font-weight: 300;
+        color: #06001a;
+    }
+    .client_section_text2{
+        margin: 5px;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: 300;
+        color: #1a1818;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .client_section3{
+        margin-bottom: 10px;
+        padding: 20px 0;
+    }
+    .section_progress3{
+        position: relative;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: conic-gradient(#191919 3.6deg, yellow 0deg); 
+    }
+    .section_progress3::before{
+        content: "";
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    .progress_value3{
+        position: relative;
+        font-size: 20px;
+        font-weight: 300;
+        color: #06001a;
+    }
+    .client_section_text3{
+        margin: 5px;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: 300;
+        color: #1a1818;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .skill-container{
+        grid-template-columns: repeat(1, 1fr);  
+    }
+    .social_account{
+        display: flex;
+        left: 10px;
+        bottom: 5px;
+        justify-content: center;
+    }
+    
+    .social_account li img{
+        height: 50px;
+        width: 50px;
+    }
+    .year-launch p{
+        font-size: 8px;
+    }
+    
 }
-
-#services{
-    margin: 25px;
-    padding: 15px;
-    display: grid;
-    justify-content: center;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-.each-services{
-    align-items: center;
-    text-align: center;
-    margin: 3px;
-    font-size: 14px;
-    font-family: Helvetica, sans-serif;
-    padding: 5px;
-    border:  1px rgba(135, 207, 235, 0.301) solid;
-    background-color: rgba(116, 68, 160, 0.445);
-    border-radius: 10px;
-    justify-content: space-between;
-}
-
-.skill-container{
-    width: 100%;
-    grid-template-columns:  1fr;
-}
-      
-}
+ 
